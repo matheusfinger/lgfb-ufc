@@ -6,10 +6,12 @@
     <title>LGFB | Genômica Funcional e Bioinformática - UFC</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- Importando o FontAwesome para os ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif;}
         .ufc-blue { background-color: #00427c !important; color: white !important; }
+        .funcrop-highlight { border-left: 4px solid #00427c; background-color: #f4f4f4; }
     </style>
 </head>
 <body>
@@ -19,6 +21,7 @@
         <a href="#" class="w3-bar-item w3-button w3-padding-large"><b>LGFB</b></a>
         <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sobre</a>
         <a href="#linhas-pesquisa" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Pesquisa</a>
+        <a href="#parcerias" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Parcerias</a>
         <a href="#equipe" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Equipe</a>
         <a href="#publicacoes" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publicações</a>
         <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contato</a>
@@ -29,56 +32,130 @@
 
     <header class="w3-container w3-center w3-padding-64">
         <h1 class="w3-xxlarge"><b>Laboratório de Genômica Funcional e Bioinformática</b></h1>
-        <p>Departamento de Bioquímica | <span class="w3-tag ufc-blue">Universidade Federal do Ceará</span></p>
+        <p>Departamento de Bioquímica e Biologia Molecular | <span class="w3-tag ufc-blue">Universidade Federal do Ceará</span></p>
     </header>
 
+    <!-- Seção Sobre Atualizada -->
     <div class="w3-row-padding w3-padding-32" id="sobre">
         <div class="w3-col m6">
             <h3>Sobre o LGFB</h3>
-            <p>O Laboratório de Genômica Funcional e Bioinformática (LGFB) dedica-se ao estudo integrado de dados ômicos...</p>
-            <p>Nossa missão é aplicar técnicas computacionais avançadas para resolver problemas biológicos complexos.</p>
+            <p style="text-align: justify;">O Laboratório de Genômica Funcional e Bioinformática (LGFB), vinculado ao Departamento de Bioquímica e Biologia Molecular da UFC, dedica-se ao estudo da biologia celular e molecular de sistemas vegetais.</p>
+            <p style="text-align: justify;">Nossa missão é integrar análises experimentais e o desenvolvimento de ferramentas computacionais avançadas para compreender a adaptação de plantas a estresses ambientais e bióticos, além de atuar na preservação e melhoria da qualidade pós-colheita de frutos tropicais e espécies de interesse agronômico.</p>
         </div>
         <div class="w3-col m6">
             <div class="w3-card w3-round-large">
-                <div class="w3-display-container w3-light-grey" style="height:250px;">
-                    <div class="w3-display-middle">[ Foto do Laboratório / Equipamentos ]</div>
-                </div>
+                <!-- Certifique-se de ter a imagem assets/laboratorio.jpeg na sua pasta -->
+                <img src="assets/laboratorio.jpeg" alt="Foto do Laboratório LGFB" class="w3-image w3-round-large" style="width:100%">
             </div>
         </div>
     </div>
 
     <hr>
 
+    <!-- Linhas de Pesquisa Atualizadas -->
     <div class="w3-container w3-padding-32" id="linhas-pesquisa">
         <h3 class="w3-center">Linhas de Pesquisa</h3>
         <div class="w3-row-padding w3-margin-top">
+            <!-- Transcriptômica -->
             <div class="w3-third">
-                <div class="w3-card w3-container w3-padding-24 w3-center">
+                <div class="w3-card w3-container w3-padding-24 w3-center" style="min-height: 250px;">
                     <i class="fa fa-dna w3-jumbo w3-text-blue"></i>
-                    <h4>Genômica</h4>
-                    <p>Análise de sequenciamento de nova geração (NGS) e montagem de genomas.</p>
+                    <h4>Transcriptômica</h4>
+                    <p style="text-align: justify; font-size: 0.9em;">Estudos de expressão gênica em larga escala empregando abordagens de RNA-Seq e validação por PCR em tempo real para elucidação de redes regulatórias em plantas.</p>
                 </div>
             </div>
+            <!-- Bioquímica Vegetal -->
             <div class="w3-third">
-                <div class="w3-card w3-container w3-padding-24 w3-center">
+                <div class="w3-card w3-container w3-padding-24 w3-center" style="min-height: 250px;">
+                    <i class="fa fa-leaf w3-jumbo w3-text-green"></i>
+                    <h4>Bioquímica Vegetal</h4>
+                    <p style="text-align: justify; font-size: 0.9em;">Investigação do metabolismo energético mitocondrial, com foco na oxidase alternativa (AOX), equilíbrio redox e biologia molecular focada na resposta a estresses e fisiologia pós-colheita.</p>
+                </div>
+            </div>
+            <!-- Bioinformática -->
+            <div class="w3-third">
+                <div class="w3-card w3-container w3-padding-24 w3-center" style="min-height: 250px;">
                     <i class="fa fa-laptop w3-jumbo w3-text-blue"></i>
                     <h4>Bioinformática</h4>
-                    <p>Desenvolvimento de pipelines, modelagem de dados e análise estrutural de proteínas.</p>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="w3-card w3-container w3-padding-24 w3-center">
-                    <i class="fa fa-flask w3-jumbo w3-text-blue"></i>
-                    <h4>Análises bioquímicas</h4>
-                    <p>Integração de dados de transcriptômica e proteômica para entender vias metabólicas.</p>
+                    <p style="text-align: justify; font-size: 0.9em;">Desenvolvimento de pipelines, análise de dados de sequenciamento de nova geração (NGS) e prospecção in silico de macromoléculas com potencial biotecnológico.</p>
                 </div>
             </div>
         </div>
     </div>
 
-</div> <footer class="w3-container w3-padding-32 w3-dark-grey w3-center w3-margin-top" id="contato">
+    <!-- Seção Parcerias e Redes -->
+    <hr>
+    <div class="w3-container w3-padding-32" id="parcerias">
+        <h3 class="w3-center">Redes de Pesquisa e Colaborações Internacionais</h3>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-half">
+                <div class="w3-padding w3-round-large funcrop-highlight" style="min-height: 180px;">
+                    <h4><b>Consórcio FunCROP</b></h4>
+                    <p style="text-align: justify; font-size: 0.95em;">O LGFB é parte integrante do Consórcio Internacional de Pesquisas <strong>FunCROP</strong> (Functional Cell Reprogramming and Organism Plasticity). O laboratório lidera o grupo brasileiro nesta rede, investigando mecanismos moleculares de defesa conservados entre plantas e humanos, sob a vice-coordenação do Prof. José Hélio Costa.</p>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-padding w3-round-large funcrop-highlight" style="min-height: 180px;">
+                    <h4><b>EU-Chair: Profa. Birgit Arnholdt-Schmitt</b></h4>
+                    <p style="text-align: justify; font-size: 0.95em;">Mantemos estreita colaboração com a iniciativa europeia coordenada pela Profa. Birgit Arnholdt-Schmitt. Nossos projetos conjuntos visam expandir as fronteiras do conhecimento em biologia celular e reprogramação funcional.</p>
+                    <p><a href="https://www.eu-chair.uevora.pt/" target="_blank" class="w3-button ufc-blue w3-round w3-small w3-hover-light-blue"><i class="fa fa-globe"></i> Visitar página da EU-Chair</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Equipe -->
+    <hr>
+    <div class="w3-container w3-padding-32" id="equipe">
+        <h3 class="w3-center">Nossa Equipe</h3>
+        <p class="w3-center w3-large w3-text-grey">Coordenadores do LGFB</p>
+        
+        <div class="w3-row-padding w3-margin-top">
+            <!-- Card Prof. José Hélio Costa -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card w3-round-large w3-padding-16 w3-center">
+                    <img src="assets/jose_helio.jpg" alt="Prof. José Hélio Costa" class="w3-circle w3-margin-top" style="width:150px; height:150px; object-fit: cover; border: 3px solid #00427c;">
+                    <div class="w3-container">
+                        <h4 class="w3-margin-top"><b>Prof. Dr. José Hélio Costa</b></h4>
+                        <p class="w3-text-grey">Professor Titular e Pesquisador Principal</p>
+                        <p style="text-align: justify; font-size: 0.9em; min-height: 120px;">
+                            Professor Titular do Departamento de Bioquímica e Biologia Molecular da UFC e Bolsista de Produtividade do CNPq. Tem foco nas áreas de Bioquímica, Genômica Funcional e Bioinformática. É referência internacional nos estudos sobre a oxidase alternativa (AOX), atuando na identificação de genes associados à adaptação a estresses em culturas como feijão-de-corda, soja e frutos tropicais.
+                        </p>
+                        <p>
+                            <a href="http://lattes.cnpq.br/9164931802712627" target="_blank" class="w3-button ufc-blue w3-round w3-small w3-hover-light-blue">
+                                <i class="fa fa-graduation-cap"></i> Currículo Lattes
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Profa. Thais Andrade Germano -->
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-card w3-round-large w3-padding-16 w3-center">
+                    <img src="assets/thais_andrade.jpg" alt="Profa. Thais Andrade Germano" class="w3-circle w3-margin-top" style="width:150px; height:150px; object-fit: cover; border: 3px solid #00427c;">
+                    <div class="w3-container">
+                        <h4 class="w3-margin-top"><b>Profa. Dra. Thais Andrade Germano</b></h4>
+                        <p class="w3-text-grey">Professora Visitante e Pesquisadora Principal</p>
+                        <p style="text-align: justify; font-size: 0.9em; min-height: 120px;">
+                            Doutora em Bioquímica Vegetal e Professora Visitante no Programa de Pós-Graduação em Bioquímica da UFC. Sua trajetória concentra-se nas áreas de Fisiologia e Bioquímica Pós-Colheita de Frutos Tropicais, Genômica Funcional e Bioinformática. Suas pesquisas focam na identificação de genes com aplicação biotecnológica para adaptação a estresses e preservação da qualidade de frutos.
+                        </p>
+                        <p>
+                            <a href="http://lattes.cnpq.br/1061435284359618" target="_blank" class="w3-button ufc-blue w3-round w3-small w3-hover-light-blue">
+                                <i class="fa fa-graduation-cap"></i> Currículo Lattes
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> 
+
+<footer class="w3-container w3-padding-32 w3-dark-grey w3-center w3-margin-top" id="contato">
     <h4>Contato</h4>
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Departamento de Bioquímica, UFC - Fortaleza, CE</p>
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Departamento de Bioquímica e Biologia Molecular, UFC - Fortaleza, CE</p>
     <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> email.do.lab@ufc.br</p>
     <p>Desenvolvido com <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-blue">W3.CSS</a></p>
 </footer>
