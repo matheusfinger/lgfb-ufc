@@ -258,6 +258,111 @@
         </div>
     </div>
 
+    <!-- Início da Seção Publicações -->
+    <hr>
+    <div class="w3-container w3-padding-32" id="publicacoes">
+        <h3 class="w3-center">Publicações em Destaque</h3>
+        <p class="w3-center w3-large w3-text-grey">Produção científica recente do LGFB</p>
+        
+        <div class="w3-row-padding w3-margin-top">
+            
+            <!-- Lista Visível por Padrão (Os 3 a 5 mais recentes) -->
+            <ul class="w3-ul w3-hoverable w3-white w3-card-4 w3-round-large">
+                
+                <!-- Artigo 1 -->
+                <li class="w3-padding-16">
+                    <span class="w3-large w3-text-blue"><b>Molecular and biochemical analyses of germination of cowpea (<i>Vigna unguiculata</i> L.) seeds inhibited by n-propyl gallate reveal a key role of alternative oxidase in germination Re-establishment</b></span><br>
+                    <span class="w3-text-dark-grey">SOUSA, L. M.; GERMANO, T. A.; AZIZ, S.; DE OLIVEIRA, M. F. R.; SALVADOR, G. M. B.; MIRANDA, R. S.; ARNHOLDT-SCHMITT, B.; COSTA, J. H.</span><br>
+                    <span class="w3-tag w3-light-grey w3-margin-top w3-small">2025</span>
+                    <span class="w3-tag ufc-blue w3-margin-top w3-small">Journal of Plant Physiology</span>
+                    <a href="http://dx.doi.org/10.1016/j.jplph.2025.154446" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                </li>
+
+                <!-- Artigo 2 -->
+                <li class="w3-padding-16">
+                    <span class="w3-large w3-text-blue"><b>Tissue- and Condition-Specific Biosynthesis of Ascorbic Acid in <i>Glycine max</i> L.: Insights from Genome-Wide Analyses of Pathway-Encoding Genes, Expression Profiling, and Mass Fraction Determination</b></span><br>
+                    <span class="w3-text-dark-grey">AZIZ, S.; GERMANO, T. A.; SOUSA DO NASCIMENTO, M. A. S.; DOS SANTOS, C. P.; ARNHOLDT-SCHMITT, B.; DE MIRANDA, M. R. A.; GOMES, M. M. A.; MAZORRA MORALES, L. M.; AYUB, R. A.; OLIVEIRA, J. G.; COSTA, J. H.</span><br>
+                    <span class="w3-tag w3-light-grey w3-margin-top w3-small">2025</span>
+                    <span class="w3-tag ufc-blue w3-margin-top w3-small">Int. Journal of Molecular Sciences</span>
+                    <a href="http://dx.doi.org/10.3390/ijms26104678" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                </li>
+
+                <!-- Artigo 3 -->
+                <li class="w3-padding-16">
+                    <span class="w3-large w3-text-blue"><b>The enigma of introns: Intronic miRNA-directed mechanisms and alternative splicing diversify alternative oxidase potential in <i>Vitis vinifera</i>  </b></span><br>
+                    <span class="w3-text-dark-grey">AZIZ, S.; GERMANO, T. A.; OLIVEIRA, A. E. R.; DA CRUZ FREIRE, J. E.; DE OLIVEIRA, M. F. R.; THIERS, K. L. L.; ARNHOLDT-SCHMITT, B.; COSTA, J. H.</span><br>
+                    <span class="w3-tag w3-light-grey w3-margin-top w3-small">2025</span>
+                    <span class="w3-tag ufc-blue w3-margin-top w3-small">Int. Journal of Molecular Sciences</span>
+                    <a href="http://dx.doi.org/10.1016/j.ijbiomac.2025.144300" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                </li>
+            </ul>
+
+            <!-- Botão Mostrar Mais -->
+            <div class="w3-center w3-margin-top">
+                <button onclick="mostrarMaisArtigos()" id="btn-mostrar-artigos" class="w3-button w3-white w3-border w3-border-blue w3-round-large w3-hover-blue">
+                    Ver todas as publicações <i class="fa fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <!-- Lista Oculta (Artigos mais antigos) -->
+            <div id="artigos-ocultos" class="w3-hide w3-animate-opacity">
+                <ul class="w3-ul w3-hoverable w3-white w3-card-4 w3-round-large w3-margin-top">
+                    
+                    <li class="w3-padding-16">
+                        <span class="w3-large w3-text-blue"><b>Class III plant peroxidases: From classification to physiological functions</b></span><br>
+                        <span class="w3-text-dark-grey">FREITAS, C. D. T.; COSTA, J. H.; GERMANO, T. A.; DE O. ROCHA, R.; RAMOS, M. V.; BEZERRA, L. P.</span><br>
+                        <span class="w3-tag w3-light-grey w3-margin-top w3-small">2024</span>
+                        <span class="w3-tag ufc-blue w3-margin-top w3-small">Int. Journal of Molecular Sciences</span>
+                        <a href="http://dx.doi.org/10.1016/j.ijbiomac.2024.130306" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                    </li>
+
+                    <li class="w3-padding-16">
+                        <span class="w3-large w3-text-blue"><b>Transcriptome Analyses in Adult Olive Trees Indicate Acetaldehyde Release and Cyanide-Mediated Respiration Traits as Critical for Tolerance against <i>Xylella fastidiosa</i> and Suggest AOX Gene Family as Marker for Multiple-Resilience</b></span><br>
+                        <span class="w3-text-dark-grey">ARNHOLDT-SCHMITT, B.; SIRCAR, D.; AZIZ, S.; GERMANO, T. A.; THIERS, K. L. L.; NOCEDA, C.; BHARADWAJ, R.; MOHANAPRIYA, G.; COSTA, J. H.</span><br>
+                        <span class="w3-tag w3-light-grey w3-margin-top w3-small">2024</span>
+                        <span class="w3-tag ufc-blue w3-margin-top w3-small">Pathogens</span>
+                        <a href="http://dx.doi.org/10.3390/pathogens13030227" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                    </li>
+
+                    <li class="w3-padding-16">
+                        <span class="w3-large w3-text-blue"><b>Validating alternative oxidase (AOX) gene family as efficient marker consortium for multiple-resilience in <i>Xylella fastidiosa</i>-infected <i>Vitis</i> holobionts</b></span><br>
+                        <span class="w3-text-dark-grey">ARNHOLDT-SCHMITT, B.; NOCEDA, C.; GERMANO, T. A.; AZIZ, SHAHID ; THIERS, K. L. L.; OLIVEIRA, M.; BHARADWAJ, R.; MOHANAPRIYA, G.; SIRCAR, D.; COSTA, J. H.</span><br>
+                        <span class="w3-tag w3-light-grey w3-margin-top w3-small">2024</span>
+                        <span class="w3-tag ufc-blue w3-margin-top w3-small">Plant Cell Reports</span>
+                        <a href="http://dx.doi.org/10.1007/s00299-024-03327-3" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                    </li>
+
+                    <li class="w3-padding-16">
+                        <span class="w3-large w3-text-blue"><b>Polymorphisms in alternative oxidase genes from ecotypes of Arabidopsis and rice revealed an environment-induced linkage to altitude and rainfall</b></span><br>
+                        <span class="w3-text-dark-grey">THIERS, K. L. L.; DA SILVA, J. H. M.; VASCONCELOS, D. C. A.; AZIZ, S.; NOCEDA, C.; ARNHOLDT-SCHMITT, B.; COSTA, J. H.</span><br>
+                        <span class="w3-tag w3-light-grey w3-margin-top w3-small">2023</span>
+                        <span class="w3-tag ufc-blue w3-margin-top w3-small">Physiologia Plantarum</span>
+                        <a href="http://dx.doi.org/10.1111/ppl.13847" target="_blank" class="w3-button w3-small w3-border w3-round w3-right w3-hover-blue w3-hide-small">Ver Artigo <i class="fa fa-external-link"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Fim da Seção Publicações -->
+
+    <!-- Script para o botão Mostrar Mais funcionar -->
+    <script>
+        function mostrarMaisArtigos() {
+            var divOculta = document.getElementById("artigos-ocultos");
+            var botao = document.getElementById("btn-mostrar-artigos");
+            
+            if (divOculta.className.indexOf("w3-show") == -1) {
+                divOculta.className += " w3-show";
+                botao.innerHTML = 'Mostrar menos <i class="fa fa-chevron-up"></i>';
+            } else {
+                divOculta.className = divOculta.className.replace(" w3-show", "");
+                botao.innerHTML = 'Ver todas as publicações <i class="fa fa-chevron-down"></i>';
+            }
+        }
+    </script>
+
 </div> 
 
 <footer class="w3-container w3-padding-32 w3-dark-grey w3-center w3-margin-top" id="contato">
